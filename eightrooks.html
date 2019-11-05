@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>N Rooks</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<h1>Solve N Rooks in NxN board</h1>
+<br/>
+<label for="n"> Set the size of the board:</label>
+<input type="number" step="1" minlength="2" value="8" maxlength="12" id="n">
+<button id="reload">Reload</button>
+<div id="game"></div>
+<button id="add-rook">ADD</button>
+<button id="solve">Solve</button>
+<h6>By: Hadi Yaghinloo 2019</h6>
+<script src="eightrooks.js"></script>
+<script>
+    let game = null
+    const loadGame = () => {
+        const size = document.getElementById("n").value;
+        game = new Game(Number(size))
+    };
+
+    loadGame();
+    document.getElementById("reload").addEventListener("click", loadGame);
+</script>
+</body>
+</html>

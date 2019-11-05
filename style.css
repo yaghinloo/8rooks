@@ -1,0 +1,57 @@
+
+body {
+    text-align: center;
+    font-size: 18px;
+}
+
+button, input {
+    font-size: 18px;
+}
+
+#game {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    border: 3px solid rgba(255, 1, 0, 0);
+    transition: border-color 1s;
+}
+
+
+.game-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.spot {
+    width: 70px;
+    height: 70px;
+    background: #ddd;
+
+}
+
+.spot {
+    border: 1px solid #222;
+    transition: border-color .5s;
+}
+
+.error .spot {
+    border: 1px solid #ff0100;
+}
+
+.rook-spot {
+    background: #ff0003;
+    background: url('images/rook.png') no-repeat center;
+    background-size: contain;
+}
+
+.open-spot {
+    width: 20px;
+    height: 20px;
+}
+
+.block-spot {
+    background: #444;
+    width: 20px;
+    height: 20px;
+}
